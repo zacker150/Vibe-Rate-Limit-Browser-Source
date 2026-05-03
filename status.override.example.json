@@ -1,0 +1,14 @@
+{
+  "claude": {
+    "status": "ok",
+    "message": "Manual Claude Code limit window",
+    "primary": {
+      "usedPercent": 42,
+      "windowMinutes": 300,
+      "resetsAt": "2026-05-03T04:00:00Z"
+    }
+  },
+  "codex": {
+    "status": "ok"
+  }
+}

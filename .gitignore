@@ -1,0 +1,6 @@
+node_modules/
+status.override.json
+claude-statusline-status.json
+server.err.log
+server.out.log
+*.log

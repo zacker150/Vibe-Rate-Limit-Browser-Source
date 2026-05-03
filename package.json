@@ -1,0 +1,13 @@
+{
+  "name": "claude-codex-rate-limits-browser-source",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser source for Claude Code and Codex rate limit status.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "default-compact",
+  "variables": {
+    "--bg": "rgba(6, 8, 12, 0)",
+    "--panel": "rgba(10, 14, 20, 0.68)",
+    "--line": "rgba(255, 255, 255, 0.14)",
+    "--text": "#f7f8fb",
+    "--muted": "#a8b0bd",
+    "--ok": "#34d399",
+    "--warn": "#f59e0b",
+    "--bad": "#fb7185",
+    "--codex": "#60a5fa",
+    "--claude": "#f97316",
+    "--track": "rgba(255, 255, 255, 0.12)",
+    "--overlay-width": "520px",
+    "--overlay-padding": "4px",
+    "--provider-gap": "5px",
+    "--provider-min-height": "86px",
+    "--provider-padding": "6px 8px",
+    "--radius": "8px",
+    "--title-size": "13px",
+    "--meta-size": "10px",
+    "--label-size": "9px",
+    "--badge-size": "9px",
+    "--bar-height": "5px",
+    "--shadow": "0 10px 28px rgba(0, 0, 0, 0.28)"
+  }
+}

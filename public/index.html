@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Rate Limits</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="overlay" aria-live="polite">
+      <div class="providers">
+        <article class="provider" id="codex-card">
+          <div class="provider-head">
+            <span class="dot"></span>
+            <h2>Codex</h2>
+            <span class="badge" data-field="status">Unknown</span>
+          </div>
+          <div class="meta" data-field="meta">Waiting for data</div>
+          <div class="windows"></div>
+        </article>
+
+        <article class="provider" id="claude-card">
+          <div class="provider-head">
+            <span class="dot"></span>
+            <h2>Claude Code</h2>
+            <span class="badge" data-field="status">Unknown</span>
+          </div>
+          <div class="meta" data-field="meta">Waiting for data</div>
+          <div class="windows"></div>
+        </article>
+      </div>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
