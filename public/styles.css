@@ -48,17 +48,9 @@ body {
   padding: var(--overlay-padding);
 }
 
-.provider-head {
-  display: flex;
-  align-items: center;
-}
-
 h2 {
   margin: 0;
   letter-spacing: 0;
-}
-
-h2 {
   font-size: var(--title-size);
   line-height: 1.2;
 }
@@ -81,6 +73,8 @@ h2 {
 }
 
 .provider-head {
+  display: flex;
+  align-items: center;
   gap: 6px;
   min-width: 0;
 }
