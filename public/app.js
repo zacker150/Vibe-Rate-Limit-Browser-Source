@@ -60,7 +60,7 @@ function renderWindow(label, window) {
 
   const value = document.createElement("span");
   value.className = "value";
-  value.textContent = `${used.toFixed(0)}% used${window.resetsAt ? ` / ${countdown(window.resetsAt)}` : ""}`;
+  value.textContent = `${used.toFixed(0)}% used`;
 
   const bar = document.createElement("div");
   bar.className = "bar";
@@ -75,16 +75,6 @@ function renderWindow(label, window) {
   return item;
 }
 
-function countdown(ms) {
-  const diff = Math.max(0, ms - Date.now());
-  const totalMinutes = Math.ceil(diff / 60000);
-  const days = Math.floor(totalMinutes / 1440);
-  const hours = Math.floor((totalMinutes % 1440) / 60);
-  const minutes = totalMinutes % 60;
-  if (days) return `${days}d ${hours}h`;
-  if (hours) return `${hours}h ${minutes}m`;
-  return `${minutes}m`;
-}
 
 async function refresh() {
   try {

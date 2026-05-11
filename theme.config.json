@@ -2,7 +2,7 @@
   "name": "default-compact",
   "variables": {
     "--bg": "rgba(6, 8, 12, 0)",
-    "--panel": "rgba(10, 14, 20, 0.68)",
+    "--panel": "rgba(10, 14, 20, 1)",
     "--line": "rgba(255, 255, 255, 0.14)",
     "--text": "#f7f8fb",
     "--muted": "#a8b0bd",
