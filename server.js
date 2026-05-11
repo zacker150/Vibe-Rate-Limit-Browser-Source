@@ -2,11 +2,12 @@ const fs = require("node:fs");
 const path = require("node:path");
 const http = require("node:http");
 const os = require("node:os");
-const { execFileSync } = require("node:child_process");
+const { execFileSync, spawn } = require("node:child_process");
 
 const PORT = Number(process.env.BROWSER_SOURCE_PORT || process.env.PORT || 3030);
 const HOST = process.env.BROWSER_SOURCE_HOST || "127.0.0.1";
 const CLAUDE_BIN = process.env.CLAUDE_BIN || "claude";
+const CODEX_BIN = process.env.CODEX_BIN || "codex";
 const CODEX_HOME = process.env.CODEX_HOME || path.join(os.homedir(), ".codex");
 const CLAUDE_HOME = process.env.CLAUDE_HOME || path.join(os.homedir(), ".claude");
 const CLAUDE_CONFIG = process.env.CLAUDE_CONFIG || path.join(os.homedir(), ".claude.json");
@@ -395,4 +396,6 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, HOST, () => {
   console.log(`Browser source rate-limit server: http://${HOST}:${PORT}`);
+  spawn(CODEX_BIN, ["exec", "Hello"], { stdio: "ignore", windowsHide: true }).unref();
+  spawn(CLAUDE_BIN, ["-p", "Hello"], { stdio: "ignore", windowsHide: true }).unref();
 });
